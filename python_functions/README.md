@@ -14,7 +14,7 @@ Python module based on numpy and scipy, for the solution of 1D radial nuclear eq
 The solution of the 1D radial nuclear equation gives the energies of the ro-vibrational
 states and the corresponding wavefunctions, for diatomic molecules.
 
-![1D radial nuclear equation](img/equation.svg)
+![1D radial nuclear equation](https://github.com/ankit7540/Raman-Intensity-Approxmn-Test/blob/main/img/equation.svg)
 
 In the present approach we use the collocation method using numerical derivatives to map the above equation on a matrix. Diagonalization of the matrix gives us the eigenvalues (energies) and the eigenvectors (wavefunctions).
 
