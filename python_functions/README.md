@@ -71,40 +71,65 @@ J              : required rotational state (solutions for all vibrational states
 
 ### Usage
 
-```
+Import the module and call the functions defined within the module.
 
+```
 import diatomicSE
 
 # for 14N15N molecule
-
 diatomicSE.get_eigenvalue_J( 7, 14, 7, 15, rwave , PES_N14N15, 5, 0.005 , 0 )
 
 ```
+In the above example, `rwave` is a one-dimensional numpy array representing the internuclear distance. `PES_N14N15` is a one-dimensional numpy array representing the potential energy surface of the molecule, here it is <sup>14</sup>N<sup>15</sup>N.
 
 ### Standard installation
+Simply clone the repository and use.  Make sure to install the required modules (`numpy`, `scipy` and `periodictable`).
 
 ```
 git clone https://github.com/ankit7540/Raman-Intensity-Approxmn-Test
 
 ```
 
-
 -----
 
 ### Examples
 
+```
+# generating the PES curve for CO
+distance_vector=np.arange(0.75, 5.25, 0.025)
+PES = PES_functions.rydberg_potential_3param(param ,  distance_vector )
 
+step = 0.004 # step (h) in the numerical derivative
+J_level = 0  # rotational state
+
+# ---------------------------------------------------------
+# calculation for the energies
+# Molecule : CO
+
+e = diatomicSE.get_eigenvalue_J( 6, 12, 8, 16, distance_vector, PES, 5, step , J_level  )
+
+# e is a vector of energies (in wavenumbers)
+# ---------------------------------------------------------
+
+# ---------------------------------------------------------
+# calculation for energies and wavefunctions
+# Molecule : CO
+
+solution = diatomicSE.get_fullsolution_J( 6, 12, 8, 16, distance_vector, PES, 5, step , J_level  )
+
+# solution is a tuple.
+# solution [0] : distance
+# solution [1] : energies (Hartree)
+# solution [2] : wavefunctions (across columns), correspond to vibrational levels
+# ---------------------------------------------------------
 
 ```
 
+**Examples are shown in jupyter notebooks:**
 
+##### General solution for CO molecules [(see file here)](https://github.com/ankit7540/Raman-Intensity-Approxmn-Test/blob/main/python_functions/examples/general_solution.ipynb)
 
-```
-
-#### Jupyter notebook
-
-##### General solution
-##### Determination of accurate PES using reference experimental data as reference
+##### Determination of accurate PES using reference experimental data as reference  for N2 molecule [(see file here)](https://github.com/ankit7540/Raman-Intensity-Approxmn-Test/blob/main/python_functions/examples/Obtaining%20PES%20.ipynb)
 
 
 ### Authors
@@ -113,8 +138,16 @@ Yen Bang Chao and Ankit Raj
 
 ### Bibliography
 
+ - U. M. Ascher and L. R. Petzold, Computer methods for ordinary differential equa-
+tions and differential-algebraic equations (Society for Industrial and Applied
+Mathematics, 2009).
 
+ - E. Hairer, S. P. Nørsett, and G. Wanner, Solving ordinary differential equations
+i: nonstiff problems (Springer, 1993).
 
+- Polarizability tensor invariants of H2, HD, and D2, J. Chem. Phys. 148, 104308 (2018), DOI: [10.1063/1.5011433](https://doi.org/10.1063/1.5011433)
+
+- Vibration–rotation interactions in H2, HD and D2 : centrifugal distortion factors and the derivatives of polarisability invariants, Mol. Phys 2019, DOI:[10.1080/00268976.2019.1632950](https://doi.org/10.1080/00268976.2019.1632950)
 
 
 ---
