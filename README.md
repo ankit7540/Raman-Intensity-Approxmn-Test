@@ -19,12 +19,12 @@ Set of python functions and datasets (rovibrational wavefunctions and polarizabi
 The double harmonic approximation is widely used in theoretical chemistry to model the frequencies and intensities of vibrational transitions in molecules. With datasets and tool in this repository, we test the harmonic approximation for computed Raman intensities.
 
 **This repository includes :**
- - python module `diatomicSE`  corresponding to the program solving the 1D Schroeginger equation for the diatomic molecule.
- - python functions which use reference datasets on experimental ro-vibrational energies to determine the accurate wavefunctions (based on the `diatomicSE` module).
- - python function which computes harmonic vibrational wavefunctions for given values of molecular parameters.
- - examples to use the diatomicSE module (the mentioned cases)
- - distance-dependent static (wavelength independent) polarizabilities for selected diatomic molecules (H2, HF, HCl, CO, N<sub>2</sub> and F<sub>2</sub>) computed using different *ab initio* techniques.
- - ro-vibrational wavefunctions (anharmonic and those computed under harmonic approximation) for all the above molecules and a few of their isotopologues.
+ - python module `diatomicSE`  corresponding to the program solving the 1D Schroeginger equation for the diatomic molecule. [(See here)](https://github.com/ankit7540/Raman-Intensity-Approxmn-Test/tree/main/python_functions)
+ - python function which use reference datasets on experimental ro-vibrational energies to determine the accurate wavefunctions (based on the `diatomicSE` module).
+ - python function which computes harmonic vibrational wavefunctions for given values of molecular parameters [(See here)](https://github.com/ankit7540/Raman-Intensity-Approxmn-Test/blob/main/python_functions/harmonic_wf.py).
+ - examples to use the `diatomicSE` module (the mentioned cases)
+ - distance-dependent static (wavelength independent) polarizabilities for selected diatomic molecules (H2, HF, HCl, CO, N<sub>2</sub> and F<sub>2</sub>) computed using different *ab initio* techniques. See `data` directory.
+ - ro-vibrational wavefunctions (anharmonic and those computed under the harmonic approximation) for all the above molecules, and a few of their isotopologues. See `data` directory.
 
 
 

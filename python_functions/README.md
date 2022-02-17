@@ -2,7 +2,7 @@
 
 **An implementation of collocation method for solution of the 1D Schroedinger equation for diatomic molecules**
 
-Python module based on numpy and scipy, for the solution of 1D radial nuclear equation, for diatomic molecules for a given potential energy curve.
+Python module based on `numpy` and `scipy`, for the solution of 1D radial nuclear equation, for diatomic molecules for a given potential energy curve.
 
 **Table of Contents**
 
@@ -39,16 +39,55 @@ get_eigenvalue_J(zA, iMassA, zB, iMassB, rwave , potential, stencil_number, step
 
 za             : atomic number (atom 1)
 iMassA         : atomic mass (atom 1)
-zB             : atomic mass (atom 2)
+zB             : atomic number (atom 2)
 iMassB         : atomic mass (atom 2)
 rwave          : 1D vector of internuclear distance (for potential energy curve)
 potential      : 1D vector of potential energy curve
 stencil_number : order to numerical derivative used to model partial derivatives
-step           : step size of the distance vector used to contruct H-matrix
+step           : step size of the distance vector used to construct H-matrix
 J              : required rotational state (solutions for all vibrational states are found at once)
 
 ```
 
+
+and
+
+```
+get_fullsolution_J(zA, iMassA, zB, iMassB, rwave , potential, stencil_number, step, J)
+# with same argument definitions as above
+```
+
+
+- Other files :
+ -- `transition.py`    (in dep directory)
+    Contains functions for computing transition frequencies from 1D vector of energies of ro-vibrational states. See [getPES.py](https://github.com/ankit7540/Raman-Intensity-Approxmn-Test/blob/main/python_functions/getPES.py) file and jupyter example for usage.
+
+  -- `PES_functions.py` (in dep directory)
+    Contains implementation of the analytical functions for generating potential energy curves of diatomic molecules. See examples below on usage.
+
+  -- `harmonic_wf.py`
+     Contains function to generate the harmonic wavefunctions using user provided molecular parameters. See "Constant of Diatomic Molecules" by Herzberg G. and Huber K.P. for tabulation of molecular params.
+
+- Directory structure
+```
+.
+├── dep
+│   ├── diatomicSE.py
+│   ├── generate_coefs.py
+│   ├── generate_H.py
+│   ├── __init__.py
+│   ├── PES_functions.py
+│   ├── quadrature.py
+│   └── transition.py
+├── examples
+│   ├── general_solution.ipynb
+│   ├── N2_ref_data
+│   │   └── N2_ref_J4_v3.txt
+│   └── Obtaining PES .ipynb
+├── getPES.py
+├── harmonic_wf.py
+└── README.md
+```
 
 ### Requirements
 
@@ -78,16 +117,14 @@ import diatomicSE
 
 # for 14N15N molecule
 diatomicSE.get_eigenvalue_J( 7, 14, 7, 15, rwave , PES_N14N15, 5, 0.005 , 0 )
-
 ```
 In the above example, `rwave` is a one-dimensional numpy array representing the internuclear distance. `PES_N14N15` is a one-dimensional numpy array representing the potential energy surface of the molecule, here it is <sup>14</sup>N<sup>15</sup>N.
 
 ### Standard installation
-Simply clone the repository and use.  Make sure to install the required modules (`numpy`, `scipy` and `periodictable`).
+Clone the repository and use.  Make sure to install the required modules (`numpy`, `scipy` and `periodictable`).
 
 ```
 git clone https://github.com/ankit7540/Raman-Intensity-Approxmn-Test
-
 ```
 
 -----
@@ -97,6 +134,7 @@ git clone https://github.com/ankit7540/Raman-Intensity-Approxmn-Test
 ```
 # generating the PES curve for CO
 distance_vector=np.arange(0.75, 5.25, 0.025)
+param =np.array([0.37563416, 1.22186557, 2.13081292])  # PES parameters for CO
 PES = PES_functions.rydberg_potential_3param(param ,  distance_vector )
 
 step = 0.004 # step (h) in the numerical derivative
