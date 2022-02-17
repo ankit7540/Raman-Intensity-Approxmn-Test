@@ -6,6 +6,7 @@ Python module based on numpy and scipy, for the solution of 1D radial nuclear eq
 
 **Table of Contents**
 
+
 * [diatomicSE](#diatomicse)
       * [About](#about)
          * [Primary function](#primary-function)
@@ -19,6 +20,7 @@ Python module based on numpy and scipy, for the solution of 1D radial nuclear eq
             * [Determination of accurate PES using reference experimental data as reference](#determination-of-accurate-pes-using-reference-experimental-data-as-reference)
       * [Authors](#authors)
       * [Bibliography](#bibliography)
+
 
 ---
 
