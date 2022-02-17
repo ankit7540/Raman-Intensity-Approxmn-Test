@@ -1,6 +1,8 @@
 
 # Raman-Intensity-Approximn-Test
 
+[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.6126144.svg)](https://doi.org/10.5281/zenodo.6126144)
+
 Set of python functions and datasets (rovibrational wavefunctions and polarizabilities) used to test the harmonic approximation for computing Raman intensities for the fundamental vibration in selected diatomic molecules.
 
 ---
