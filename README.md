@@ -7,7 +7,10 @@ Set of python functions and datasets (rovibrational wavefunctions and polarizabi
 
 **Table of Contents**
 
-[TOC]
+* [Raman-Intensity-Approximn-Test](#raman-intensity-approximn-test)
+   * [About](#about)
+   * [Bibliography](#bibliography)
+   * [Authors](#authors)
 
 ---
 
