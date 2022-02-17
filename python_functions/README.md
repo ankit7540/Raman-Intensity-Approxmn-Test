@@ -8,18 +8,17 @@ Python module based on numpy and scipy, for the solution of 1D radial nuclear eq
 
 
 * [diatomicSE](#diatomicse)
-      * [About](#about)
+     * [About](#about)
          * [Primary function](#primary-function)
-      * [Requirements](#requirements)
-      * [Tested with](#tested-with)
-      * [Usage](#usage)
-      * [Standard installation](#standard-installation)
-      * [Examples](#examples)
-         * [Jupyter notebook](#jupyter-notebook)
-            * [General solution](#general-solution)
-            * [Determination of accurate PES using reference experimental data as reference](#determination-of-accurate-pes-using-reference-experimental-data-as-reference)
-      * [Authors](#authors)
-      * [Bibliography](#bibliography)
+     * [Requirements](#requirements)
+     * [Tested with](#tested-with)
+     * [Usage](#usage)
+     * [Standard installation](#standard-installation)
+     * [Examples](#examples)
+          * [General solution](#general-solution)
+          * [Determination of accurate PES using reference experimental data as reference](#determination-of-accurate-pes-using-reference-experimental-data-as-reference)
+     * [Authors](#authors)
+     * [Bibliography](#bibliography)
 
 
 ---
