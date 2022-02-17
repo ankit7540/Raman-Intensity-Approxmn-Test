@@ -12,7 +12,7 @@ from scipy import interpolate
 from scipy import constants
 
 
-from stencil import generate_coefs
+from dep import generate_coefs 
 import matplotlib.pyplot as plt
 #-------------------------------------------------------------------
 

@@ -42,6 +42,7 @@ J              : required rotational state (solutions for all vibrational states
 + `python3`
     + `numpy`
 	+ `scipy`
+    + `periodictable`
 
 
 ### Tested with
@@ -49,6 +50,7 @@ J              : required rotational state (solutions for all vibrational states
 + `python 3.5+`
     + `numpy 1.15.2+`
 	+ `scipy 1.1.0+`
+    + `periodictable 1.6.0`
 
 
 -----

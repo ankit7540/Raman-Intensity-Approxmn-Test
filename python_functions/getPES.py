@@ -65,7 +65,6 @@ def modification_morse_potential(param,xaxis):
 #   optimize function ( optimization of spline coefs)
 def run_fit(initial_guess):
 
-
     res = opt.minimize( residual_rovibration_3v, initial_guess,\
                        method='Nelder-Mead', \
                               options={'xatol': 1e-8,\

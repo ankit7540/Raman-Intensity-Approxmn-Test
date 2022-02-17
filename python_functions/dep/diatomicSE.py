@@ -246,7 +246,7 @@ def get_fullsolution_J(zA, iMassA, zB, iMassB, rwave , potential, stencil_number
     for i in range(Hshape):
         wcm_inv[i] = sorted_energy[i] *conv_hartree_to_wavenumber
 
-    rfull=np.delete(rFull,[0,1,-1,-2],axis=0)
+    rfull=rFull[2:dim-2]
     #end = time.time()
     #print(end - start)
     #time=6.40555471
@@ -370,7 +370,7 @@ def get_eigenvalue_harmonic_J(zA, iMassA, zB, iMassB, rwave , potential, stencil
 
 
     # trimming the rFull after symmetrization procedure
-    rFull=np.delete(rFull,[0,1,-1,-2],axis=0)
+    rfull=rFull[2:dim-2]
 
     #end = time.time()
     #print(end - start)
