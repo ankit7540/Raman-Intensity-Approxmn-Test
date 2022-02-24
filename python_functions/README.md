@@ -2,7 +2,7 @@
 
 **An implementation of collocation method for solution of the 1D Schroedinger equation for diatomic molecules**
 
-Python module based on `numpy` and `scipy`, for the solution of 1D radial nuclear equation, for diatomic molecules for a given potential energy curve.
+Python module based on `numpy` and `scipy`, for solution of the 1D radial nuclear equation for a given potential energy curve.
 
 **Table of Contents**
 
