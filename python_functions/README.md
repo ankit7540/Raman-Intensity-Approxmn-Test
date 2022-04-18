@@ -118,7 +118,7 @@ import diatomicSE
 # for 14N15N molecule
 diatomicSE.get_eigenvalue_J( 7, 14, 7, 15, rwave , PES_N14N15, 5, 0.005 , 0 )
 ```
-In the above example, `rwave` is a one-dimensional numpy array representing the internuclear distance. `PES_N14N15` is a one-dimensional numpy array representing the potential energy surface of the molecule, here it is <sup>14</sup>N<sup>15</sup>N.
+In the above example, `rwave` is a one-dimensional numpy array representing the internuclear distance. `PES_N14N15` is a one-dimensional numpy array representing the potential energy surface of the <sup>14</sup>N<sup>15</sup>N molecule.
 
 ### Standard installation
 Clone the repository and use.  Make sure to install the required modules (`numpy`, `scipy` and `periodictable`).
@@ -130,6 +130,8 @@ git clone https://github.com/ankit7540/Raman-Intensity-Approxmn-Test
 -----
 
 ### Examples
+
+Following shows an example for the CO molecule.
 
 ```
 # generating the PES curve for CO
@@ -165,9 +167,9 @@ solution = diatomicSE.get_fullsolution_J( 6, 12, 8, 16, distance_vector, PES, 5,
 
 **Examples are shown in jupyter notebooks:**
 
-##### General solution for CO molecules [(see file here)](https://github.com/ankit7540/Raman-Intensity-Approxmn-Test/blob/main/python_functions/examples/general_solution.ipynb)
+##### General solution for the CO molecule [(see file here)](https://github.com/ankit7540/Raman-Intensity-Approxmn-Test/blob/main/python_functions/examples/general_solution.ipynb)
 
-##### Determination of accurate PES using reference experimental data as reference  for N2 molecule [(see file here)](https://github.com/ankit7540/Raman-Intensity-Approxmn-Test/blob/main/python_functions/examples/Obtaining%20PES%20.ipynb)
+##### Determination of accurate PES using reference experimental data as reference  for the N<sub>2</sub> molecule [(see file here)](https://github.com/ankit7540/Raman-Intensity-Approxmn-Test/blob/main/python_functions/examples/Obtaining%20PES%20.ipynb)
 
 
 ### Authors
