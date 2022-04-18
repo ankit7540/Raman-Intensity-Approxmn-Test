@@ -5,14 +5,6 @@ The following directory contains calculated data for the studied molecules. This
 -----
 
 
-**Table of Contents**
-
-
-[TOC]
-
------
-
-
 ## Polarizability data
 
 Polarizability data is placed in the `polarizability` directory. Format of the data is as follows (example from CO_HartreeFock.dat).
