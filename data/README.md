@@ -13,7 +13,7 @@ The following directory contains calculated data for the studied molecules. This
 -----
 
 
-##Polarizability data
+## Polarizability data
 
 Polarizability data is placed in the `polarizability` directory. Format of the data is as follows (example from CO_HartreeFock.dat).
 
@@ -29,13 +29,13 @@ Polarizability values are given in atomic units.
 
 
 
-##Ro-vibrational wavefunctions
+## Ro-vibrational wavefunctions
 
 Ro-vibrational wavefunctions and the potential energy curve for a molecule are placed in the `wfns` directory. Each data file is a one-dimensional column of data.
 
 Wavefunctions are labelled using the vibrational and rotational quantum number (both for the exact and harmonic type). Distance data (in bohr) is common to both wavefunctions and the PES.
 
-##Potential energy surface
+## Potential energy surface
 
 PES corresponds to the anharmonic potential energy curve obtained using analysis scheme developed in this work, where we utilized experimental datasets on transition energies to iteratively obtain the PES via non-linear optimization scheme.
 
