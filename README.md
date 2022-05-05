@@ -8,7 +8,9 @@
 Article :
 
 Testing the limitations of harmonic approximation in the determination of Raman intensities
+
 e2069613, Molecular Physics (2022) [https://doi.org/10.1080/00268976.2022.2069613]((10.1080/00268976.2022.2069613))
+
 ---
 
 Set of python functions and datasets (rovibrational wavefunctions and polarizabilities) used to test the double harmonic approximation for computing Raman intensities of the fundamental vibration in selected diatomic molecules.
