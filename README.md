@@ -8,8 +8,7 @@
 Article :
 
 Testing the limitations of harmonic approximation in the determination of Raman intensities
-
-e2069613, Molecular Physics (2022) [https://doi.org/10.1080/00268976.2022.2069613]((https://doi.org/10.1080/00268976.2022.2069613))
+e2069613, Molecular Physics (2022) [https://doi.org/10.1080/00268976.2022.2069613](https://doi.org/10.1080/00268976.2022.2069613)
 
 ---
 
