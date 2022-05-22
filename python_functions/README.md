@@ -178,16 +178,13 @@ Yen Bang Chao and Ankit Raj
 
 ### Bibliography
 
- - U. M. Ascher and L. R. Petzold, Computer methods for ordinary differential equa-
-tions and differential-algebraic equations (Society for Industrial and Applied
-Mathematics, 2009).
+ - U. M. Ascher and L. R. Petzold, Computer methods for ordinary differential equations and differential-algebraic equations (Society for Industrial and Applied Mathematics, 2009).
 
- - E. Hairer, S. P. Nørsett, and G. Wanner, Solving ordinary differential equations
-i: nonstiff problems (Springer, 1993).
+ - E. Hairer, S. P. Nørsett, and G. Wanner, Solving ordinary differential equations i: nonstiff problems (Springer, 1993).
 
-- Polarizability tensor invariants of H2, HD, and D2, J. Chem. Phys. 148, 104308 (2018), DOI: [10.1063/1.5011433](https://doi.org/10.1063/1.5011433)
+- Polarizability tensor invariants of H<sub>2</sub>, HD, and D<sub>2</sub>, J. Chem. Phys. 148, 104308 (2018), DOI: [10.1063/1.5011433](https://doi.org/10.1063/1.5011433)
 
-- Vibration–rotation interactions in H2, HD and D2 : centrifugal distortion factors and the derivatives of polarisability invariants, Mol. Phys 2019, DOI:[10.1080/00268976.2019.1632950](https://doi.org/10.1080/00268976.2019.1632950)
+- Vibration–rotation interactions in H<sub>2</sub>, HD and D<sub>2</sub> : centrifugal distortion factors and the derivatives of polarisability invariants, Mol. Phys 2019, DOI:[10.1080/00268976.2019.1632950](https://doi.org/10.1080/00268976.2019.1632950)
 
 
 ---
